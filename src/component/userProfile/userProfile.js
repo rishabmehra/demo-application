@@ -15,7 +15,8 @@ const UserProfile = ({
     lastName,
     email,
     contactInfo,
-    handleDelete,        
+    handleDelete,
+    handleEdit,        
 }) => {
     return (
         <div className="user-profile">
@@ -34,7 +35,7 @@ const UserProfile = ({
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">Edit</Button>
+                <Button size="small" color="primary" onClick={() => handleEdit(id) }>Edit</Button>
                 <Button size="small" color="primary" onClick={() => handleDelete(id) }>Delete</Button>
             </CardActions>
         </Card>
