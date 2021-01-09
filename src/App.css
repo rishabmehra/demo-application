@@ -9,3 +9,13 @@
     justify-content: space-around;
     margin: 20px;
 }
+.cardHeader--search {
+    display: flex;
+}
+.carHeader--search-select {
+    margin-right: 20px;
+}
+.carHeader--search-button {
+    padding-top: 10px;
+    margin-left: 15px;
+}

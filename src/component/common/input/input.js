@@ -1,3 +1,5 @@
+import React from "react";
+import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 
 const Input = ({
@@ -14,4 +16,10 @@ const Input = ({
     )
 }
 
-export default Input
+Input.propTypes = {
+    label: PropTypes.string,
+    value: PropTypes.string,
+    onChangeHandler: PropTypes.func.isRequired
+}
+
+export default Input;

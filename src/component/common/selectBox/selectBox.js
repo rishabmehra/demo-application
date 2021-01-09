@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import InputLabel from '@material-ui/core/InputLabel';
@@ -26,6 +27,13 @@ const SelectBox = ({
         </Select>
       </>  
     )
+}
+
+SelectBox.propTypes = {
+  searchLabel: PropTypes.string,
+  value: PropTypes.string,
+  handleChange: PropTypes.func.isRequired,
+  options: PropTypes.array
 }
 
 export default SelectBox
